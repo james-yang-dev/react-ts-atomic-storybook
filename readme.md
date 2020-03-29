@@ -1,3 +1,5 @@
+<img width="1305" alt="AtomicDesign" src="https://user-images.githubusercontent.com/52027534/77842962-59643900-71d3-11ea-932d-87a9fe775671.png">
+
 # react-atomic-design with typescript, stories
 
 아토믹 디자인을 리액트와 타입스크립트를 이용해 구현하고 스토리북을 통해 시각화 한 보일러 플레이트 입니다.
@@ -20,11 +22,16 @@
 
 ### 원자-Atoms
 
+<img width="138" alt="Atoms" src="https://user-images.githubusercontent.com/52027534/77846049-36934e00-71ee-11ea-95f7-b8abaa63bd8a.png">
+
+
 원자는 가장 작은 단위의 컴포넌트 입니다. 버튼, 인풋, 타이틀, 컬러, 폰트 등을 의미합니다.  
 자체적으로 가지는 상태, 이벤트, 스타일 등이 기술되어 있습니다. 혼자 동작할 수는 없습니다.
 컨텍스트, 상태관리 등 외부 특정 페이지 요소들에게 간섭 받지 않아야 합니다.
 
 ### 분자-Molecules
+
+<img width="495" alt="Molecules" src="https://user-images.githubusercontent.com/52027534/77846047-35fab780-71ee-11ea-9e4b-85059289a7c1.png">
 
 분자는 원자를 합쳐 구성하는 컴포넌트 입니다. 원자의 스타일 요소를 정하고, 각 원자간의 연결, 스타일 요소도 결정합니다.  
 유기체로부터 데이터를 전달받아 원자에게 분배하고, 최소한의 한 가지 기능을 수행할 수 있도록 구현되어 있습니다.
@@ -32,16 +39,22 @@
 
 ### 유기체-Organisms
 
+<img width="1040" alt="Organisms" src="https://user-images.githubusercontent.com/52027534/77846045-35622100-71ee-11ea-9793-56fe7f8c813e.png">
+
 유기체는 분자와 원자를 사용해 특정 화면 영역을 구현 하는 컴포넌트 입니다.  
 유기체는 특정 컨텍스트와 상태관리등의 영향을 받으며, 페이지의 일부분을 담당하는 영역입니다.
 
 ### 템플릿-Templates
+
+<img width="1040" alt="Template" src="https://user-images.githubusercontent.com/52027534/77846044-34c98a80-71ee-11ea-9589-cd947e3b2bee.png">
 
 컨텍스트나 상태관리등에 영향 받지 않으며, 유기체와는 다르게 자체적으로 동작 하는 컴포넌트들을 가지지 않습니다.  
 페이지로부터 적절한 유기체들을 공급받아, 배치하는 역할을 수행합니다.
 와이어 프레임 형태로 제작이 됩니다.
 
 ### 페이지-Pages
+
+<img width="1038" alt="Pages" src="https://user-images.githubusercontent.com/52027534/77846042-2f6c4000-71ee-11ea-888b-c4c3ec645598.png">
 
 페이지는 구현의 마지막 단계 입니다. 사용자가 직접 접하는 화면을 의미합니다.
 컨텍스트와 상태관리 등 페이지 구현에 필요한 모든 자원을 관리하는 단위가 됩니다.
@@ -83,6 +96,7 @@
 ## Contributors
 
 [@james-yang-dev](https://github.com/james-yang-dev/)
+[@LeadJockey](https://github.com/LeadJockey)
 
 ### License
 

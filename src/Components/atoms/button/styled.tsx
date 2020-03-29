@@ -7,6 +7,7 @@ const baseStyle = () => {
     border: 0px;
     outline: 0px;
     display: block;
+    font-family: sans-serif;
     cursor: pointer;
     position: relative;
     font-weight: 600;
@@ -19,24 +20,32 @@ type themeOptions = {
 
 const buttonTheme: themeOptions = {
   DEFAULT: css`
-    background: yellow;
-    border: 1px solid black;
+    color: #fff;
+    background: #2995c0;
+    border: 1px solid #2995c0;
   `,
   ROUNDED: css`
-    background: skyblue;
-    border-radius: 10px;
+    color: #2995c0;
+    background: #fff;
+    border: 1px solid #2995c0;
+    transition: color 0.3s ease, background 0.3s ease;
+
+    &:hover {
+      color: #fff;
+      background: #2995c0;
+    }
   `,
 };
 
 const buttonSize: themeOptions = {
   SMALL: css`
-    font-size: 10px;
+    padding: 0.5em 0.6em;
   `,
   MEDIUM: css`
-    font-size: 12px;
+    padding: 1.1em 1.3em;
   `,
   LARGE: css`
-    font-size: 14px;
+    padding: 1.7em 2.4em;
   `,
 };
 

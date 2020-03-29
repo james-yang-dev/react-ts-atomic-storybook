@@ -10,8 +10,8 @@ const stories = storiesOf('Components|Atoms/Button', module);
 stories.addDecorator(withKnobs);
 
 stories.add('default', () => {
-  const themeList = select('ThemeList', ButtonTheme, ButtonTheme.ROUNDED);
-  const sizeList = select('SizeList', ButtonSize, ButtonSize.SMALL);
+  const themeList = select('ThemeList', ButtonTheme, ButtonTheme.DEFAULT);
+  const sizeList = select('SizeList', ButtonSize, ButtonSize.LARGE);
   const typeList = select('TypeList', ButtonTypeList, ButtonTypeList.BUTTON);
   const disabled = boolean('disabled', false);
   return (
@@ -22,7 +22,7 @@ stories.add('default', () => {
       type={typeList}
       disabled={disabled}
     >
-      {text('buttonText', 'Test Button')}
+      {text('buttonText', 'Atomic button')}
     </Button>
   );
 });

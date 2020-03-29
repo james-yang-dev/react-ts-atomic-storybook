@@ -31,8 +31,8 @@ async function init(unit, name) {
     await createFile(path.join(targetPath, `index.tsx`), createBaseComp(filename));
     await createFile(path.join(targetPath, `styled.tsx`), createStyledComp(filename));
     await createFile(path.join(targetPath, `stories.tsx`), createStories(atomicName, filename));
-    await createFile(path.join(targetPath, `${filename}.test.tsx`), createTest(filename));
-    await createFile(path.join(targetPath, `${filename}.md`), createMD(atomicName, filename));
+    // await createFile(path.join(targetPath, `${filename}.test.tsx`), createTest(filename));
+    // await createFile(path.join(targetPath, `${filename}.md`), createMD(atomicName, filename));
   } catch (error) {
     console.log(ANSI_FONT_RED, error.message);
   }

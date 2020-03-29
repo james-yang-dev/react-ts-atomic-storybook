@@ -69,7 +69,7 @@ const getAllStyle = ({ useTheme }: ${componentProps}) => {
   \`
 }
 
-export const ${StyledComponent} = styled.???<${componentProps}>\`
+export const ${StyledComponent} = styled.div<${componentProps}>\`
   \${getAllStyle}
 \`
 

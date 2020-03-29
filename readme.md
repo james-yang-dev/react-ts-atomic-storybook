@@ -2,7 +2,7 @@
 
 아토믹 디자인을 리액트와 타입스크립트를 이용해 구현하고 스토리북을 통해 시각화 한 보일러 플레이트 입니다.
 
-- [아토믹 디자인은](https://github.com/james-yang-dev/react-ts-atomic-storybook/아토믹-디자인은)
+- [아토믹 디자인은](https://github.com/james-yang-dev/react-ts-atomic-storybook#아토믹-디자인은)
   - [원자-Atoms](https://github.com/james-yang-dev/react-ts-atomic-storybook#원자-Atoms)
   - [분자-Molecules](https://github.com/james-yang-dev/react-ts-atomic-storybook#분자-Molecules)
   - [유기체-Organisms](https://github.com/james-yang-dev/react-ts-atomic-storybook#유기체-Organisms)

@@ -1,3 +1,5 @@
+<img width="1305" alt="AtomicDesign" src="https://user-images.githubusercontent.com/52027534/77842962-59643900-71d3-11ea-932d-87a9fe775671.png">
+
 # react-atomic-design with typescript, stories
 
 아토믹 디자인을 리액트와 타입스크립트를 이용해 구현하고 스토리북을 통해 시각화 한 보일러 플레이트 입니다.

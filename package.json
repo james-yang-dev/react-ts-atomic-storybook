@@ -19,8 +19,8 @@
   },
   "scripts": {
     "build": "webpack --mode production",
-    "dev": "webpack-dev-server --mode development",
-    "sb": "start-storybook -p 9999",
+    "dev": "webpack-dev-server --mode development -p 5000",
+    "storybook": "start-storybook -p 9999",
     "cac": "node scripts/createAtomicComponent"
   },
   "keywords": [],

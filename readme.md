@@ -96,6 +96,7 @@
 ## Contributors
 
 [@james-yang-dev](https://github.com/james-yang-dev/)
+[@LeadJockey](https://github.com/LeadJockey)
 
 ### License
 

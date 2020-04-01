@@ -86,21 +86,43 @@
 
 ### 네비게이션
 
-### 시각적 표현
+스토리북에 선언된 컴포넌트들의 트리 형태 네비게이션을 제공합니다.
+타이틀에 선언된 이름 방식대로 자동으로 처리 됩니다.
 
-### 변수들
+<img width="274" alt="네비게이션" src="https://user-images.githubusercontent.com/52027534/78101187-adfcf380-7421-11ea-87a5-87142eadcc5d.png">
 
-### 동작
+### 시각적 표현-Canvas
 
-### 컴포넌트에 대한 내용
+선택된 컴포넌트가 어떻게 보이는지 시각적으로 표시해줍니다.
+
+<img width="444" alt="Canvas" src="https://user-images.githubusercontent.com/52027534/78101185-ad645d00-7421-11ea-9bd7-5ece7d7765cc.png">
+
+### 변수들-knobs
+
+선택된 컴포넌트에 적용될 변수들을 보여줍니다. 해당 변수들을 선택하거나 수정하면 캔버스에 바로 반영이 됩니다.
+
+<img width="592" alt="Knobs" src="https://user-images.githubusercontent.com/52027534/78101183-accbc680-7421-11ea-9a17-a8c6fa27fc86.png">
+
+### 동작-actions
+
+컴포넌트에 기능이 동작되면 액션에 동작된 내역이 표시 됩니다.
+
+<img width="391" alt="Actions" src="https://user-images.githubusercontent.com/52027534/78101181-accbc680-7421-11ea-81b1-1eb542dfc099.png">
+
+### 컴포넌트에 대한 내용-Docs
+
+해당 컴포넌트에 대한 내용 전체를 표시 해줍니다.  
+컴포넌트의 내용들은 주석으로 표시해둔 내용들이며, 기본 파라미터나 컴포넌트의 내용들이 포함됩니다.
+
+<img width="697" alt="Docs" src="https://user-images.githubusercontent.com/52027534/78101173-a9383f80-7421-11ea-9001-f6dad7100901.png">
 
 ## Scripts
 
-| Script | Desc |
-| ---- | ---- |
-|`$ yarn dev`| 개발 서버를 올립니다. 포트는 5000 입니다. |
-|`$ yarn storybook`| 스토리북을 올립니다. 포트는 9999 입니다. |
-|`$ yarn cac unit='' name=''`| 스토리북 기본 컴포넌트를 생성합니다. Unit에는 A, M, O, T, P, name은 컴포넌트의 이름을 적습니다. |
+| Script                       | Desc                                                             |
+| ---------------------------- | ---------------------------------------------------------------- |
+| `$ yarn dev`                 | 개발 서버를 올립니다. 포트는 5000 입니다.                                       |
+| `$ yarn storybook`           | 스토리북을 올립니다. 포트는 9999 입니다.                                        |
+| `$ yarn cac unit='' name=''` | 스토리북 기본 컴포넌트를 생성합니다. Unit에는 A, M, O, T, P, name은 컴포넌트의 이름을 적습니다. |
 
 ## Libraries
 

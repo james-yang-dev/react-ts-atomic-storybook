@@ -1,19 +1,21 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { text, withKnobs, select, boolean } from '@storybook/addon-knobs';
 
 import Button, { ButtonTheme, ButtonTypeList, ButtonSize } from './';
 
-const stories = storiesOf('Components|Atoms/Button', module);
+export default {
+  title: 'Components|Atoms/Button',
+  component: Button,
+  decorators: [withKnobs],
+};
 
-stories.addDecorator(withKnobs);
-
-stories.add('default', () => {
+export const standard = () => {
   const themeList = select('ThemeList', ButtonTheme, ButtonTheme.DEFAULT);
   const sizeList = select('SizeList', ButtonSize, ButtonSize.LARGE);
   const typeList = select('TypeList', ButtonTypeList, ButtonTypeList.BUTTON);
   const disabled = boolean('disabled', false);
+
   return (
     <Button
       size={sizeList}
@@ -25,4 +27,4 @@ stories.add('default', () => {
       {text('buttonText', 'Atomic button')}
     </Button>
   );
-});
+};

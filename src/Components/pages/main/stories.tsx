@@ -1,15 +1,14 @@
 import React from 'react';
-import { storiesOf } from '@storybook/react';
-import { text, withKnobs, select, boolean } from '@storybook/addon-knobs';
+import { withKnobs } from '@storybook/addon-knobs';
 
 import Main from './';
 
-const stories = storiesOf('Pages/Main', module);
-
-stories.addDecorator(withKnobs);
-
-const defaultMain = () => {
-  return <Main></Main>;
+export default {
+  title: 'Components|Atoms/Box',
+  component: Main,
+  decorators: [withKnobs],
 };
 
-stories.add('default', defaultMain);
+export const standard = () => {
+  return <Main></Main>;
+};

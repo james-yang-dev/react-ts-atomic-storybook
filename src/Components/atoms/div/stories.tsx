@@ -1,24 +1,16 @@
-
 import React from 'react';
-import { storiesOf } from '@storybook/react';
-import { action } from '@storybook/addon-actions';
-import { text, withKnobs, select, boolean } from '@storybook/addon-knobs';
+import { withKnobs, select } from '@storybook/addon-knobs';
 
 import Div, { DivTheme } from './';
 
+export default {
+  title: 'Components|Atoms/Div',
+  component: Div,
+  decorators: [withKnobs],
+};
 
-const stories = storiesOf('Components|Atoms/Div', module);
-
-stories.addDecorator(withKnobs);
-
-const defaultDiv = () => {
+export const standard = () => {
   const themeList = select('ThemeList', DivTheme, DivTheme.DEFAULT);
-  return (
-    <Div
-      useTheme={themeList}
-    >
-    </Div>
-  )
-}
 
-stories.add('default', defaultDiv);
+  return <Div useTheme={themeList}></Div>;
+};

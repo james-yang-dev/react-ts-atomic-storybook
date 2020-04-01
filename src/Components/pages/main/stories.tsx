@@ -4,7 +4,7 @@ import { withKnobs } from '@storybook/addon-knobs';
 import Main from './';
 
 export default {
-  title: 'Components|Atoms/Box',
+  title: 'Pages|Main',
   component: Main,
   decorators: [withKnobs],
 };

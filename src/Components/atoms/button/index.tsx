@@ -25,14 +25,27 @@ export enum ButtonTypeList {
 }
 
 type ButtonProps = {
+  /** 버튼의 타입을 지정한다. button, reset, submit */
   type: ButtonTypeList;
+  /** 버튼의 테마를 나타낸다 */
   useTheme: string;
+  /** 버튼의 크기 */
   size: string;
+  /** 버튼이 클릭될때 수행 될 이벤트 */
   onClick: () => void;
+  /** 버튼에 전달될 children */
   children: React.ReactNode;
+  /** 버튼의 비활성화 여부 */
   disabled: boolean;
 };
 
+/**
+ * 버튼을 구현할때 이 컴포넌트를 사용합니다.
+ *
+ * useTheme를 이용해 버튼의 스타일을 변경할 수 있습니다.
+ * size를 이용해 버튼이 표시될 사이즈를 지정할 수 있습니다.
+ *
+ */
 function Button({ type, onClick, children, useTheme, disabled, size }: ButtonProps) {
   return (
     <StyledButton useTheme={useTheme} size={size} type={type} onClick={onClick} disabled={disabled}>

@@ -9,8 +9,9 @@ module.exports = {
   },
   devServer: {
     contentBase: path.join(__dirname, 'public'),
+    open: true,
     compress: true,
-    port: 3000,
+    port: 5000,
   },
   entry: path.resolve(__dirname, 'src', 'index.tsx'),
   output: {

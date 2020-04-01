@@ -1,30 +1,30 @@
-
-import React from 'react'
-import {StyledBox} from './styled'
+import React from 'react';
+import { StyledBox } from './styled';
 
 type objectOptions = {
   [key: string]: string;
 };
 
 export const BoxTheme: objectOptions = {
-  DEFAULT: 'DEFAULT'
-}
+  DEFAULT: 'DEFAULT',
+};
 
 type BoxProps = {
   useTheme: string;
   children: React.ReactNode;
-}
+};
 
-function Box ({ useTheme, children, ...rest } : BoxProps) {
+function Box({ useTheme, children, ...rest }: BoxProps) {
   return (
-    <StyledBox useTheme={useTheme} {...rest}>{children}</StyledBox>
+    <StyledBox useTheme={useTheme} {...rest}>
+      {children}
+    </StyledBox>
   );
 }
 
 Box.defaultProps = {
   children: '',
-  useTheme: BoxTheme.DEFAULT
-}
+  useTheme: BoxTheme.DEFAULT,
+};
 
-export default Box
-
+export default Box;

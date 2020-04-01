@@ -1,22 +1,16 @@
 import React from 'react';
+import Main from '@src/Components/pages/main';
 
 interface PersonProps {
   name: string;
-  age: number;
 }
 
-function App({ name, age }: PersonProps) {
-  return (
-    <div className="container">
-      <h1>{name}</h1>
-      <h1>{age}</h1>
-    </div>
-  );
+function App({ name }: PersonProps) {
+  return <Main></Main>;
 }
 
 App.defaultProps = {
-  name: 'test',
-  age: 18,
+  name: '',
 };
 
 export default App;

@@ -1,6 +1,6 @@
 import React from 'react';
-import { StyledFeature } from './styled';
 import Card from '@src/Components/molecules/card';
+import { StyledFeature } from './styled';
 
 type objectOptions = {
   [key: string]: string;
@@ -16,11 +16,10 @@ type FeatureProps = {
   imageUrl: string;
 };
 
-function Feature({ useTheme, children, imageUrl, ...rest }: FeatureProps) {
-  console.log('imageUrl', imageUrl);
+function Feature({ useTheme, children, imageUrl }: FeatureProps) {
   return (
     <StyledFeature useTheme={useTheme} imageUrl={imageUrl}>
-      <Card title={'Organisms'} subTitle={'카드의 표시 방식'} buttonText={'learn more'}>
+      <Card title="Organisms" subTitle="카드의 표시 방식" buttonText="learn more">
         <p>유기체의 본문</p>
       </Card>
       {children}

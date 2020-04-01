@@ -11,6 +11,7 @@
   - [템플릿-Templates](https://github.com/james-yang-dev/react-ts-atomic-storybook#템플릿-Templates)
   - [페이지-Pages](https://github.com/james-yang-dev/react-ts-atomic-storybook#페이지-Pages)
 - [리액트 + 아토믹은](https://github.com/james-yang-dev/react-ts-atomic-storybook#리액트--아토믹은)
+- [스토리북-storybook](https://github.com/james-yang-dev/react-ts-atomic-storybook#스토리북-storybook)
 - [Scripts](https://github.com/james-yang-dev/react-ts-atomic-storybook#Scripts)
 - [Libraries](https://github.com/james-yang-dev/react-ts-atomic-storybook#Libraries)
 - [Contributors](https://github.com/james-yang-dev/react-ts-atomic-storybook#Contributors)
@@ -68,6 +69,30 @@
 - 분자와 유기체만이 원자의 위치에 대해 정의할 수 있습니다. 하지만 자신들의 margin이나 위치에 대한 스타일을 가지지 않습니다.
 - 템플릿은 하나의 기능만을 수행합니다. 유기체들이 어떻게 배치될지에 대해서만 관여하지만 컴포넌트들에는 아무 영향을 미치지 않습니다.
 - 페이지는 템플릿을 통해서 화면을 그립니다. 컨텍스트나 상태관리 등 페이지에 필요한 자원들을 활용하여 아토믹 컴포넌트들을 연결하여, 정상적인 어플리케이션으로 동작할 수 있도록 합니다.
+
+## 스토리북-storybook
+
+스토리북은 생성된 컴포넌트들을 보기 쉽게 표현해주고, 사용방식에 대한 예제 및 상세한 파라미터들에 대해 다룰 수 있는 툴 입니다.
+사용 방식이 조금 어려울 수 있으나, 컴포넌트 재활용 및 유지보수성을 증가시켜주기 때문에 사용해야 하는 툴 입니다.
+특징이 몇 가지 있는데 아래와 같습니다.
+
+- 스토리북은 컴포넌트를 시각화 해줍니다.
+- 단순 시각화 외에 해당 컴포넌트가 동작하는 방식, 필요한 파라미터등의 예제도 보여줍니다.
+- 자바스크립트로 구현하게 되어있어 가독성이 좋고, 필요한 부분에 주석 형태로 내용을 보충하면 컴포넌트에 필요한 문서를 자동으로 생성해줍니다.
+- 재활용 및 범용성 증가를 위해 컴포넌트의 사용 케이스를 나열해야 합니다.
+  - 다양한 변수를 고려해야 하며,
+  - 이 점 때문에 컴포넌트의 테스트를 부분적으로 대체할 수 있고,
+  - 견고한 컴포넌트의 구성이 가능해집니다.
+
+### 네비게이션
+
+### 시각적 표현
+
+### 변수들
+
+### 동작
+
+### 컴포넌트에 대한 내용
 
 ## Scripts
 
